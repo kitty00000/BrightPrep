@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops - BrightPrep</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-yellow-bar"></div>
+
+    <nav class="navigation-bar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="BrightPrep Logo" class="logo-image">
+                <div class="logo-text">BrightPrep</div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="resources.html">Resources</a>
+                <a href="workshops.html">Workshops</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="sign-in.html" class="sign-in">Sign in</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="workshops-content">
+        <h1>Workshops</h1>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <div class="filter-group">
+                <label for="subject">SUBJECT</label>
+                <select id="subject" name="subject">
+                    <option value="">Select</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="duration">DURATION</label>
+                <select id="duration" name="duration">
+                    <option value="">Select</option>
+                    <option value="1-hour">1 Hour</option>
+                    <option value="2-hours">2 Hours</option>
+                    <option value="3-hours">3 Hours</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="type">TYPE</label>
+                <select id="type" name="type">
+                    <option value="">Select</option>
+                    <option value="online">Online</option>
+                    <option value="in-person">In-Person</option>
+                </select>
+            </div>
+            <button class="clear-filters">CLEAR ALL FILTERS</button>
+        </div>
+
+        <!-- Workshops List -->
+        <div class="workshops-list">
+            <!-- Workshop 1: Time Management -->
+            <div class="workshop-card">
+                <h2>Time Management</h2>
+                <p>Helps students optimize their study time by teaching them to create effective schedules, prioritize tasks, and avoid procrastination. It introduces tools like planners and prioritization techniques, enabling students to balance study and breaks, reduce stress, and boost productivity for exam success.</p>
+            </div>
+
+            <!-- Workshop 2: Stress-Management -->
+            <div class="workshop-card">
+                <h2>Stress-Management</h2>
+                <p>A stress-management workshop teaches students relaxation techniques, mindfulness, and healthy habits to handle exam pressure. It provides tools to manage time, reframe negative thoughts, and build resilience, helping them stay calm and focused during exams.</p>
+            </div>
+
+            <!-- Workshop 3: Organize Study Routine -->
+            <div class="workshop-card">
+                <h2>Organize Study Routine</h2>
+                <p>An "Organize Your Study Routine" workshop teaches students to create structured study plans, prioritize tasks, and use tools like planners effectively. It helps them eliminate distractions, balance study with breaks, and stay consistent for better exam preparation.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
