@@ -55,8 +55,9 @@ body {
     text-decoration: none;
     margin: 0 15px;
     font-family: 'Rufina', serif;
-    padding: 8px 12px;
+    padding: 10px 15px; /* Slightly bigger padding */
     border-radius: 5px;
+    font-size: 1.2em; /* Bigger font size */
     transition: background-color 0.3s ease;
 }
 
@@ -67,14 +68,47 @@ body {
 .nav-links .sign-in {
     background-color: #65558F;
     color: #fff;
-    padding: 8px 20px;
+    padding: 10px 25px; /* Slightly bigger padding */
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1.2em; /* Bigger font size */
     transition: background-color 0.3s ease;
 }
 
 .nav-links .sign-in:hover {
     background-color: #7A6A9F;
+}
+
+/* Company Statement */
+.company-statement {
+    max-width: 800px; /* Wider width for a longer statement */
+    margin: 40px auto; /* Centered */
+    font-size: 1.6em; /* Bigger font size */
+    line-height: 1.6;
+    color: #555;
+    text-align: center; /* Center-align the text */
+}
+
+.company-statement em {
+    font-style: italic;
+}
+
+/* Get Started Button */
+.hero button {
+    background-color: #000; /* Black button */
+    color: #FFF1B8; /* Yellow text */
+    border: none;
+    padding: 20px 50px; /* Bigger button */
+    font-size: 1.4em; /* Bigger font size */
+    cursor: pointer;
+    font-family: 'Rufina', serif;
+    border-radius: 50px; /* Rounder button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.hero button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+    transform: scale(1.05); /* Slightly bigger on hover */
 }
 
 /* Hero Section */
@@ -91,76 +125,149 @@ body {
     font-family: 'Rufina', serif;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin: 40px 0;
-    font-family: 'Rufina', serif;
+/* Search Bar */
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.hero button {
-    background-color: #333;
-    color: #FFF1B8;
+.search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    width: 400px; /* Longer search bar */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 40px 0; /* Increased margin for more spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Increased gap between input and button */
+}
+
+.search-bar input {
+    padding: 15px; /* Bigger padding for input */
+    font-size: 1.2em; /* Bigger font size for input */
+    width: 500px; /* Wider search bar */
+    border: 2px solid #ccc; /* Thicker border */
+    border-radius: 10px; /* Rounded corners */
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.search-bar input:focus {
+    border-color: #65558F; /* Purple border on focus */
+}
+
+.search-bar button {
+    padding: 15px 30px; /* Bigger button */
+    font-size: 1.2em; /* Bigger font size for button */
+    background-color: #65558F; /* Purple button */
+    color: #fff;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    border-radius: 10px; /* Rounded corners */
     cursor: pointer;
-    font-family: 'Rufina', serif;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
-/* Divider Line */
-.divider {
-    width: calc(100% - 40px);
-    height: 2px;
-    background-color: #000;
-    margin: 40px 20px;
+.search-bar button:hover {
+    background-color: #7A6A9F; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly bigger on hover */
 }
+
 
 /* Events Section */
 .events {
-    padding: 20px;
+    padding: 60px 20px; /* Increased padding for more space */
     text-align: center;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    margin: 40px 20px; /* Added margin for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .events h2 {
-    font-size: 2em;
-    margin: 40px 0;
+    font-size: 2.5em; /* Bigger heading */
+    margin: 0 0 40px 0; /* Adjusted margin */
     font-family: 'Rufina', serif;
+    color: #333; /* Darker text for better contrast */
 }
 
 .event-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the event cards */
     flex-wrap: wrap;
+    gap: 20px; /* Consistent spacing between cards */
 }
 
 .event {
-    background-color: #fff;
+    background-color: #FFF1B8; /* Yellow background for cards */
     padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    width: 300px; /* Fixed width for all cards */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Evenly spaced content */
+    min-height: 400px; /* Consistent height for all cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.event:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .workshop-image {
-    width: 80%;
-    height: auto;
-    border-radius: 5px;
+    width: 100%; /* Full width for images */
+    height: 200px; /* Fixed height for images */
+    border-radius: 10px; /* Rounded corners for images */
     margin-bottom: 15px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
 }
 
 .event h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Bigger font size for workshop title */
     font-family: 'Rufina', serif;
+    color: #65558F; /* Purple color for headings */
 }
 
 .event p {
-    font-size: 1em;
+    font-size: 1.2em; /* Bigger font size for speaker name and date */
     color: #555;
     font-family: 'Rufina', serif;
+    margin: 5px 0; /* Spacing between paragraphs */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Resources Page Styles */
 .resources-content {
@@ -177,78 +284,79 @@ body {
     color: #333;
 }
 
+/* Intro text styling */
+.intro-text {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px; /* More space below the intro text */
+}
+
+/* Thick line divider */
+.divider-line {
+    width: 100%;
+    height: 4px; /* Thickness of the line */
+    background-color: #65558F; /* Color of the line */
+    margin-bottom: 10px; /* Reduced space below the line */
+}
+
 .resource-section {
     margin-bottom: 40px;
 }
 
+/* Resource section headings */
 .resource-section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.2em; /* Increased from 2em to make headings bigger */
+    margin-bottom: 10px; /* Space below the heading */
     font-family: 'Rufina', serif;
     color: #65558F;
 }
 
 .resource-section p {
     font-size: 1.1em;
-    line-height: 1.6;
     color: #555;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.example-table {
-    margin-top: 20px;
-}
-
-.example-table h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-family: 'Rufina', serif;
-    color: #333;
-}
-
-table {
+/* Iframe styling */
+iframe {
+    border: none;
+    border-radius: 10px;
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    height: 600px; /* Adjusted height to fit the sheet */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below the iframe */
 }
 
-table th, table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+/* Ensure the iframe container doesn't overflow */
+.resource-section {
+    overflow: hidden; /* Prevents any overflow issues */
 }
 
-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
 
-.example-planner {
-    margin-top: 20px;
-}
 
-.example-planner h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-family: 'Rufina', serif;
-    color: #333;
-}
 
-.planner-grid {
-    display: flex;
-    gap: 20px;
-}
 
-.time-slots, .tasks {
-    flex: 1;
-}
 
-.time-slots p, .tasks p {
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin: 0;
-    background-color: #f9f9f9;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Sign In Page Styles */
 .signin-content {
@@ -286,6 +394,7 @@ table th {
 .auth-button:hover {
     background-color: #7A6A9F;
 }
+
 
 
 
@@ -348,6 +457,17 @@ table th {
 .signup-content button:hover, .login-content button:hover {
     background-color: #7A6A9F;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -503,6 +623,22 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FAQ Section */
 .faqs-content {
     padding: 20px;
@@ -569,6 +705,92 @@ body {
 .toggle-button:hover {
     background-color: #7A6A9F;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Us Section */
+.contact-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.center-text {
+    text-align: center; /* Center-align the text */
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 1483px; /* Updated height to match the Google Form */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -669,7 +891,7 @@ body {
 }
 
 .workshops-content h1 {
-    font-size: 4.5em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
 }
@@ -678,7 +900,7 @@ body {
 .filters {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px; /* Increased gap between filter groups */
     margin-bottom: 40px;
 }
 
@@ -689,9 +911,9 @@ body {
 }
 
 .filter-group label {
-    font-size: 1em;
+    font-size: 1.2em; /* Increased font size for labels */
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Added more space below labels */
 }
 
 .filter-group select {
@@ -715,25 +937,24 @@ body {
 }
 
 .clear-filters:hover {
-    background-color: #7A6A9F;
+    background-color: 07A6A9F;
 }
 
 /* Workshops List */
 .workshops-list {
     display: flex;
-    flex-direction: column;
+;   flex-direction: column;
     gap: 20px;
 }
 
 .workshop-card {
     background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;1.8  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-.workshop-card h2 {
+.workshop-car1 h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #333;
