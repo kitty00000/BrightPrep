@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - BrightPrep</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-yellow-bar"></div>
+
+    <nav class="navigation-bar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="BrightPrep Logo" class="logo-image">
+                <div class="logo-text">BrightPrep</div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="resources.html">Resources</a>
+                <a href="workshops.html">Workshops</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="sign-in.html" class="sign-in">Sign in</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>FAQs</h1>
+    </section>
+
+    <div class="faqs-content">
+        <div class="faq-section">
+            <div class="faq-question" onclick="toggleAnswer('answer1', 'toggle1')">
+                <span>Q1. What should I bring to my exam?</span>
+                <button id="toggle1" class="toggle-button">+</button>
+            </div>
+            <div class="faq-answer" id="answer1" style="display: none;">
+                <ul>
+                    <li>Pencils, pens, and erasers</li>
+                    <li>A calculator (if required)</li>
+                    <li>Your textbook if it hasn't been handed in yet</li>
+                    <li>A ruler, protractor, or any other specific tools your teacher mentioned</li>
+                    <li>Remember, no cell phones or smartwatches are allowed in the examination room.</li>
+                </ul>
+            </div>
+
+            <div class="faq-question" onclick="toggleAnswer('answer2', 'toggle2')">
+                <span>Q2. What if I don't understand a question on the exam?</span>
+                <button id="toggle2" class="toggle-button">+</button>
+            </div>
+            <div class="faq-answer" id="answer2" style="display: none;">
+                Unfortunately, teachers cannot explain questions during the exam. If you're unsure, make your best attempt and move on, as you can always come back to it later.
+            </div>
+
+            <div class="faq-question" onclick="toggleAnswer('answer3', 'toggle3')">
+                <span>Q3. What should I do if I'm severely sick on exam day?</span>
+                <button id="toggle3" class="toggle-button">+</button>
+            </div>
+            <div class="faq-answer" id="answer3" style="display: none;">
+                If you're severely sick on exam day, contact your instructor as soon as possible to discuss your options. You may need to provide a medical certificate.
+            </div>
+
+            <div class="faq-question" onclick="toggleAnswer('answer4', 'toggle4')">
+                <span>Q4. How can I best prepare for exams?</span>
+                <button id="toggle4" class="toggle-button">+</button>
+            </div>
+            <div class="faq-answer" id="answer4" style="display: none;">
+                Visit the tips and resources page for study tips, planners, and helpful strategies to stay organized and focused. Remember, some tips that work for others may not work for you—it is all about finding ways that suit your learning style and needs the best!
+            </div>
+
+            <div class="faq-question" onclick="toggleAnswer('answer5', 'toggle5')">
+                <span>Q5. Who can I talk to if I have more questions?</span>
+                <button id="toggle5" class="toggle-button">+</button>
+            </div>
+            <div class="faq-answer" id="answer5" style="display: none;">
+                If you have any further questions, feel free to ask your guidance counselor, teachers, or reach out to us through the Contact Us page on this website.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id, toggleId) {
+            var answer = document.getElementById(id);
+            var toggleButton = document.getElementById(toggleId);
+
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                toggleButton.textContent = "-"; // Change button to "-" when expanded
+            } else {
+                answer.style.display = "none";
+                toggleButton.textContent = "+"; // Change button to "+" when collapsed
+            }
+        }
+    </script>
+</body>
+</html>
