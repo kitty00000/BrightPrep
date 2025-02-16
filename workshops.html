@@ -6,6 +6,96 @@
     <title>Workshops - BrightPrep</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional CSS for the requested changes */
+        .filters {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .filter-group {
+            flex: 1;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .filter-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .clear-filters {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            align-self: flex-end;
+            height: 40px; /* Same height as the select elements */
+        }
+
+        .workshops-content h1 {
+            font-size: 3rem; /* Larger title */
+            margin-bottom: 20px;
+            text-align: center; /* Center the title */
+        }
+
+        .workshops-list {
+            display: flex;
+            gap: 20px; /* Space between workshop cards */
+            justify-content: space-between; /* Distribute space evenly */
+            flex-wrap: nowrap; /* Ensure workshops stay in a single line */
+        }
+
+        .workshop-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: left; /* Align text to the left */
+            flex: 1; /* Equal width for all cards */
+            min-width: 30%; /* Ensure cards don't shrink too much */
+            position: relative; /* For positioning icons */
+        }
+
+        .workshop-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .workshop-card p {
+            margin: 0;
+        }
+
+        /* Icons in the top-right corner */
+        .workshop-card .icons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px; /* Space between icons */
+        }
+
+        .workshop-card .icons i {
+            font-size: 1.2rem;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .workshop-card .icons i:hover {
+            color: #000; /* Darker color on hover */
+        }
+    </style>
 </head>
 <body>
     <div class="top-yellow-bar"></div>
@@ -65,18 +155,33 @@
         <div class="workshops-list">
             <!-- Workshop 1: Time Management -->
             <div class="workshop-card">
+                <!-- Icons -->
+                <div class="icons">
+                    <i class="fas fa-star"></i> <!-- Star icon -->
+                    <i class="fas fa-link"></i> <!-- Link icon -->
+                </div>
                 <h2>Time Management</h2>
                 <p>Helps students optimize their study time by teaching them to create effective schedules, prioritize tasks, and avoid procrastination. It introduces tools like planners and prioritization techniques, enabling students to balance study and breaks, reduce stress, and boost productivity for exam success.</p>
             </div>
 
             <!-- Workshop 2: Stress-Management -->
             <div class="workshop-card">
+                <!-- Icons -->
+                <div class="icons">
+                    <i class="fas fa-star"></i> <!-- Star icon -->
+                    <i class="fas fa-link"></i> <!-- Link icon -->
+                </div>
                 <h2>Stress-Management</h2>
                 <p>A stress-management workshop teaches students relaxation techniques, mindfulness, and healthy habits to handle exam pressure. It provides tools to manage time, reframe negative thoughts, and build resilience, helping them stay calm and focused during exams.</p>
             </div>
 
             <!-- Workshop 3: Organize Study Routine -->
             <div class="workshop-card">
+                <!-- Icons -->
+                <div class="icons">
+                    <i class="fas fa-star"></i> <!-- Star icon -->
+                    <i class="fas fa-link"></i> <!-- Link icon -->
+                </div>
                 <h2>Organize Study Routine</h2>
                 <p>An "Organize Your Study Routine" workshop teaches students to create structured study plans, prioritize tasks, and use tools like planners effectively. It helps them eliminate distractions, balance study with breaks, and stay consistent for better exam preparation.</p>
             </div>
